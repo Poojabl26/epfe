@@ -34,8 +34,7 @@
         Effective programming practices for economists\\
         Universität Bonn, Winter 2018/19 \\[2ex]
         Exercise solution\\[2ex]
-        Group XXXX\\[2ex]
-        Your names here
+        Pooja Bansal 
         }
     \end{large}
 \end{center}
@@ -44,8 +43,87 @@
 \begin{exercise}
     ~ % do not delete this innocent tilde unless you put text here
     \begin{enumerate}
-        \item Your answer here\ldots
-        \item {\ldots} and here.
+    \item  -cd Desktop\\
+           -cd Economics\\
+           -mkdir Effective\_Programming f\\
+           -cd Effective\_Programming \\
+           -git config --global user.name "pooajbl26" \\
+           -git config --global user.email "pooja.bansal2610@gmail.com"\\
+           -git init \\
+           -git status 
+           
+    \item -nano .gitignore \\
+    Copied the template to the file\\
+          -git status
+          
+     \item -mkdir exercise\_1 \\
+           \underline{copying the file}- \space \textbf{cp} ~/Desktop/GitHub/prog-econ-winter-2018-19-comm/templates/exercise\_solution\_template.tex ~/Desktop/Economics/Effective\_Programming/exercise\_1/ \\
+           \underline{renaming the file}- \space \textbf{mv} /Users/poojabansal/Desktop/Economics/Effective\_Programming/exercise\_1/exercise\_solution\_template.tex  /Users/poojabansal/Desktop/Economics/Effective\_Programming/exercise\_1/Solution.tex 
+     \item  
+     \begin{itemize}
+         \item - git add .gitignore exercise\_1/ \\ 
+           - git commit -m "Template added and initial folder structure has been created"
+          \item File modified\\
+           - git status \\
+           - git add -A\\
+           - git commit -m "Name changed"
+           
+     \end{itemize} 
+        \item After deciding on my research topic, I go through the relevant literature to understand  what kind of data I need and the estimation techniques to analyze the data. I view and filter the data I need in excel.I book ark the important links. I download all the relevant articles in a single folder ,and make notes in Google docs so I can easily access them from any system. I put all the relevant material in a single folder with different sub-folders for data,created text files using word and other relevant articles. I have used python in jupyter notebook in the previous semester to do all my analysis. 
+           
+       \item \section*{Cunha and Heckman (2007)}   
+        \begin{itemize}
+            \item 
+        Following are the stylized facts from the intervention literature that inspired the Technology of Skill Formation:
+        \begin{itemize}
+     \item Ability gaps between individuals and across socioeconomic groups open up at early ages, for both cognitive and non-cognitive skills. 
+     \item In both animal and human species, there is compelling evidence of critical and sensitive periods in the development of the child.
+     \item Despite the low returns to interventions targeted toward disadvantaged adolescents, the empirical literature shows high economic returns for remedial investments in young disadvantaged children. 
+     \item If early investment in disadvantaged children is not followed up by later investment, its effect at later ages is lessened. 
+     \item The effects of credit constraints on a child’s outcomes when the child reaches adult- hood depend on the age at which they bind for the child’s family.
+     \item Socio-emotional (non-cognitive) skills foster cognitive skills and are an important product of successful families and successful interventions in disadvantaged families.
+   \end{itemize}
+ 
+        \item  \subsection*{Skill Formation Model}
+        The author develops a model of skill formation governed by multistage technology where each stage represents a period of life cycle of the child. The child possesses abilities, ranging from both pure cognitive to non-cognitive abilities. Parents make investments in the child and the output of the investment process at each stage is the skill vector. The model describes the evolution of skills over time with the inputs being the skills of the preceding period ( we assume that the child is born with some initial skill set) , parental characteristics and investment. The skills acquired in one stage persists into the future and raises the productivity of investment at subsequent stages. This is the multiplier effect of dynamic complementarity and self productivity of human capital. They together imply an equity-efficiency trade-off for late child investments but not for early investments. The complementarity illustrates how children with higher skills in the early stages are more efficient in acquiring both skills in the later stages. The model further explains, using the standard CES, how early investment not only boosts the adult stock of skills but the productivity of succeeding investments in later period since without proper foundation of learning, adolescent intervention have lower returns. 
+        \newline
+        
+        \item 
+        \begin{itemize}
+        \item \textbf{\underline{Critical Period}} : It is a particular period in the child's life in which investment is particularly fruitful, the stage alone is effective in producing  certain skill. An example can be Language acquisition which a child learns in the initial period and then gain proficiency. 
+        
+        
+       \item \textbf{\underline{Sensitive Period}}: Some stages in the life cycle are  more effective in producing certain skills, it could be because some inputs are more efficient at some particular stages. The period in which the child is more responsive to certain form of learning is the Sensitive Period. This could vary from several months to several years .
+        
+         
+       \item \textbf{\underline{Dynamic Complementarity}}: It explains the importance of early life conditions in shaping multiple life skills. It implies that skill investments in different stages are synergistic and early investment in children’s skill
+        development will have large returns because they raise the return to future investments, meaning the stock of skills acquired in a particular period makes the investment in the next period more productive.That is why the returns to education are higher at the later stages of life cycle for more able children
+        \newline
+        \end{itemize}
+        
+        \item $$ \theta_{t+1} = f_{t}(h, \theta_{t}, I_{t}) $$ 
+         If the production function is assumed to be linear, we assume there is no dynamic complementarity. 
+        We assumed a concave production function which would give $$ f^{2}(h, \theta_{t}, I_{t})/ \partial \theta_{t} \partial I'_{t} > 0 $$
+        
+        but the linearity of production function implies : $$ f(h, \theenumi_{t}, I_{t}) = \alpha h + \beta\theta_{t} + \gamma.I_{t}$$
+        
+         $$ f'(h, theta_{t}, I_{t} / \partial\theta_{t} = \beta $$
+         $$f^{2} (h, \theta_{t}, I_{t})/ \partial\theta_{t} \partial I'_{t} =0 $$ 
+         thus violating the requirements for existence of Dynamic complementarity
+          \end{itemize}
+        
+
+
+
+    \item \subsection*{Ignoring the Measurement Error} 
+    The model treats Cognitive and non-cognitive skills as latent factors represented by test scores but they do not reflect the real latent abilities because they are measured with error. Due to the existence of measurement error in our error term, the composite error is no longer independent of  our input variables i.e skills.
+   Test scores are likely to be determined also by other abilities of an individual or other unobserved factors . Thus the coefficient corresponding to the test scores would only partially capture the effect of measured skills and the true effect of variables cannot be obtained. 
+   
+   \item git add -A \\
+   git commit -m " All questions answered"\\
+   git remote add origin https://github.com/Poojabl26/epfe.git
+   git push -u origin master
+   
     \end{enumerate}
 \end{exercise}
 
